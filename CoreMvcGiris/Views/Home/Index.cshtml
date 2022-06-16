@@ -1,0 +1,23 @@
+﻿@model IList<Kisi>
+<h1>Index sayafasi </h1>
+
+<table>
+    <thead> 
+        <tr> 
+            <th>Adi</th>
+            <th> Soyadi</th>
+            <th> Gsm</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Ad</td>
+                <td>@item.Soyad</td>
+                <td>@item.Gsm</td>
+            </tr>
+            
+        }
+    </tbody>
+</table>
